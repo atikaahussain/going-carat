@@ -1,0 +1,30 @@
+/* CATEGORY BAR */
+.categories{
+    padding-left: 2rem;
+}
+.categories h2{
+      font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.category-bar button {
+  padding: 8px 15px;
+  border: 2px solid black;
+  background: #FEEFC3;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.category-bar button.active,
+.category-bar button:hover {
+  background: #F35E3D;
+  color: white;
+  border: none;
+}

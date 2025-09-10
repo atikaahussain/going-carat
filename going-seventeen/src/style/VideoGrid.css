@@ -1,0 +1,45 @@
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.video-card {
+
+  padding: 7px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+.video-card img {
+  width: 100%;
+  background: #f5f1f1;
+  border: 2px solid black;
+  padding: 2px; /* shows background around edges */
+  box-sizing: border-box; /* keeps padding inside width */
+  
+}
+.video-card a{
+      text-decoration: none; /* removes underline */
+}
+.svt-yt {
+  display: block;         /* forces it onto its own line */
+  text-align: left;       /* aligns the text left */
+  font-size: 13px;
+  font-weight: lighter;
+  color: #333;
+  margin-top: 4px;        /* small space above it */
+  text-decoration: none;  /* removes underline */
+}
+
+
+.video-card h3 {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+  
+}

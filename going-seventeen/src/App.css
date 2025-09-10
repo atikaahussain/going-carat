@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background: #FEEFC3;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+
+/* SECTIONS */
+
+/* VIDEO GRID */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-card h3 {
+    font-size: 12px;
+  }
+}

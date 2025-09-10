@@ -1,0 +1,21 @@
+.section {
+  padding: 1rem 2rem ;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.section-header a {
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+}
