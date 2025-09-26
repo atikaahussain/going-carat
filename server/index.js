@@ -2,13 +2,14 @@ import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
-import serverless from "serverless-http";
 
 dotenv.config();
 
 console.log("API KEY LOADED:", process.env.YT_API_KEY);
 
 const app = express();
+const PORT = 5000;
+
 app.use(cors());
 
 const API_KEY = process.env.YT_API_KEY;
@@ -57,6 +58,6 @@ app.get("/api/playlists", async (req, res) => {
   }
 });
 
-// ❌ REMOVE app.listen()
-// ✅ Export handler for Vercel
-export const handler = serverless(app);
+app.listen(PORT, () => {
+  console.log(`✅ Server running on http://localhost:${PORT}`);
+});
