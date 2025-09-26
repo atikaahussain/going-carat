@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
   <div className="header-box">
-    <p>Welcome to Going Carat ✨</p>
+    <p>Welcome to Going Carat 💎</p>
     <p>Your home for GOING SEVENTEEN episodes, MVs, and more!</p>
   </div>
     </header>

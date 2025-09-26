@@ -1,13 +1,12 @@
 .header {
-  background-color: #FFD635; /* yellow background */
-  text-align: center;       /* center everything */
-  display: flex;            
-  justify-content: center;  /* center horizontally */
-  align-items: center;      /* center vertically */
+  background-color: #fa869d;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   border: 2px solid black;
   padding: 20px 0;
-
 }
 
 .header p {
@@ -16,9 +15,32 @@
 }
 
 .header-box {
-  background-color: #FEEFC3; /* light brown */
+  background-color: #fcdfe5;
   border: 2px solid black;
   padding: 1rem 4rem;
-  font-family: "Arial", sans-serif; /* minimal font */
-  max-width: 600px;          /* keep it compact */
+  font-family: "Arial", sans-serif;
+  max-width: 600px;
+  width: 90%;        /* keeps some gap around on small screens */
+  box-sizing: border-box;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .header-box {
+    padding: 1rem 2rem;   /* reduce side padding */
+    max-width: 90%;       /* shrink gracefully */
+  }
+  .header p {
+    font-size: 0.8rem;   /* slightly smaller title */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-box {
+    padding: 0.8rem 1rem; /* tighter padding */
+    max-width: 95%;       /* nearly full width but keeps gap */
+  }
+  .header p {
+    font-size: 0.7rem;   /* slightly smaller title */
+  }
 }

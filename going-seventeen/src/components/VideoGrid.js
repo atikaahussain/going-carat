@@ -14,7 +14,6 @@ function VideoGrid({ videos }) {
             <img src={video.thumbnail} alt={video.title} />
             <h3>{video.title}</h3>
           </a>
-          <a href="https://youtube.com/@pledis17?si=xHwUYP3GacoM0--6" className="svt-yt">seventeen★</a>
         </div>
       ))}
     </div>

@@ -1,12 +1,13 @@
 /* CATEGORY BAR */
-.categories{
-    padding-left: 2rem;
+
+.categories h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding-left: 1rem;
 }
-.categories h2{
-      font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-}
+
 .category-bar {
+  padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -17,14 +18,46 @@
 .category-bar button {
   padding: 8px 15px;
   border: 2px solid black;
-  background: #FEEFC3;
+  background: #fcdfe5;
   cursor: pointer;
   transition: 0.4s;
+
+  flex-shrink: 1;           /* allow buttons to shrink */
+  min-width: 80px;          /* don’t shrink too small */
+  white-space: nowrap;      /* keep text in one line */
 }
 
 .category-bar button.active,
 .category-bar button:hover {
-  background: #F35E3D;
+  background: #F48BA0;
   color: white;
   border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .category-bar {
+    gap: 12px;              /* tighter spacing */
+  }
+  .category-bar button {
+    padding: 6px 12px;
+    font-size: 0.6rem;
+  }
+  .categories h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-bar {
+    gap: 8px;
+  }
+  .category-bar button {
+    padding: 5px 10px;
+    font-size: 0.6rem;
+    min-width: 65px;
+  }
+  .categories h2{
+    font-size: 1rem;
+  }
 }

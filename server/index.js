@@ -15,15 +15,15 @@ app.use(cors());
 const API_KEY = process.env.YT_API_KEY;
 
 const PLAYLISTS = {
-  latest: "PLSS4KpnnLk5BLcx59aXjU_CL2HLtSlXYv",
-  best: "PLSS4KpnnLk5AEmQbZuWmLqp7DkbDXh7jZ",
-  mvs: "PLSS4KpnnLk5AEmQbZuWmLqp7DkbDXh7jZ",
-  teasers: "PLSS4KpnnLk5AEmQbZuWmLqp7DkbDXh7jZ",
-  documentaries: "PLSS4KpnnLk5AEmQbZuWmLqp7DkbDXh7jZ",
+  latest: "PLk_UmMfvZDx21Z9eEQ9DcIlUfZp1uwEup&si",
+  best: "PLSS4KpnnLk5D_PjkxGGYvI-U1OJFFwDfV&si",
+  mvs: "PLk_UmMfvZDx2wu3ynTngcZMzgH4l2SgLP&si",
+  teasers: "PL_Cqw69_m_ywLcKO6_jF_Dut090l8A6R6&si",
+  documentaries: "PL0n1IhkYiG2yEa_T7XnxoSDK0TuljmOxF&si",
 };
 
 async function fetchPlaylist(playlistId) {
-  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=${playlistId}&key=${API_KEY}`;
+  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistId}&key=${API_KEY}`;
 
   const res = await fetch(url);
   const data = await res.json();

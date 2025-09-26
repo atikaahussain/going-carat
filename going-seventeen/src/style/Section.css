@@ -1,5 +1,10 @@
 .section {
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
+  padding: 1rem 2rem;
+  border-bottom: 0.5px solid #fa869d;; /* light grey separator */
+}
+.app-container > .section:last-of-type {
+  border-bottom: none;
 }
 
 .section-header {
@@ -10,12 +15,41 @@
 
 .section-header h2 {
   margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
 }
 
 .section-header a {
   text-decoration: none;
   font-weight: bold;
-  color:black;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-header a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 0.8rem;
+  }
+
+  .section-header h2 {
+    font-size: 1rem;
+  }
+
+  .section-header a {
+    font-size: 0.8rem;
+  }
 }
