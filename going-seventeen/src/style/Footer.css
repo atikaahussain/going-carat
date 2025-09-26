@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .bottom .b-line-1 a {
   color: black;
@@ -46,7 +46,6 @@
 }
 
 .bottom .b-line-1 .aboutme:hover {
-  background-color: black;   /* invert colors on hover */
   color: white;
   transform: translateY(-2px); /* subtle lift effect */
 }

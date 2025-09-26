@@ -7,7 +7,7 @@
 }
 
 .category-bar {
-  padding-left: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -21,10 +21,10 @@
   background: #fcdfe5;
   cursor: pointer;
   transition: 0.4s;
-
-  flex-shrink: 1;           /* allow buttons to shrink */
-  min-width: 80px;          /* don’t shrink too small */
-  white-space: nowrap;      /* keep text in one line */
+  font-family: 'Boogaloo', sans-serif;
+  flex-shrink: 1; 
+  min-width: 80px;
+  white-space: nowrap;
 }
 
 .category-bar button.active,
@@ -55,7 +55,7 @@
   .category-bar button {
     padding: 5px 10px;
     font-size: 0.6rem;
-    min-width: 65px;
+    min-width: 80px;
   }
   .categories h2{
     font-size: 1rem;

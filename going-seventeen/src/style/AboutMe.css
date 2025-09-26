@@ -1,8 +1,37 @@
-.aboutme-box p{
+/* Center the whole page content */
+.aboutme-header {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  min-height: 0vh;         /* full viewport height */
+  font-family: 'Shadows Into Light', cursive;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
-    font-family: Arial, sans-serif;
+/* The content box */
+.aboutme-box {
+  max-width: 700px;
+
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Paragraph spacing */
+.aboutme-box p {
+  margin-bottom: 1rem;
+
+}
+
+/* Responsive: smaller screens */
+@media (max-width: 600px) {
+  .aboutme-box {
+    padding: 1.2rem;
     font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 15px;
+      line-height: 1.1;
+  }
 }

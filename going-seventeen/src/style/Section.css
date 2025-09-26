@@ -1,6 +1,5 @@
 .section {
   padding: 1rem 2rem;
-  padding: 1rem 2rem;
   border-bottom: 0.5px solid #fa869d;; /* light grey separator */
 }
 .app-container > .section:last-of-type {
@@ -42,7 +41,7 @@
 
 @media (max-width: 480px) {
   .section {
-    padding: 0.8rem;
+    padding: 1rem;
   }
 
   .section-header h2 {

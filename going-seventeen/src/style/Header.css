@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Shadows+Into+Light&display=swap');
+
 .header {
   background-color: #fa869d;
   text-align: center;
@@ -11,14 +13,14 @@
 
 .header p {
   margin: 5px 0 0;
-  color: #555;
+  color: #393838;
 }
 
 .header-box {
   background-color: #fcdfe5;
   border: 2px solid black;
   padding: 1rem 4rem;
-  font-family: "Arial", sans-serif;
+  font-family: 'Boogaloo', sans-serif;
   max-width: 600px;
   width: 90%;        /* keeps some gap around on small screens */
   box-sizing: border-box;
@@ -41,6 +43,6 @@
     max-width: 95%;       /* nearly full width but keeps gap */
   }
   .header p {
-    font-size: 0.7rem;   /* slightly smaller title */
+    font-size: 0.8rem;   /* slightly smaller title */
   }
 }
