@@ -21,11 +21,17 @@
     const [activeCategory, setActiveCategory] = useState("everything");
 
     useEffect(() => {
-      fetch("http://localhost:5000/api/playlists")
+      console.log("API URL:", process.env.REACT_APP_API_URL);
+
+      fetch(`${process.env.REACT_APP_API_URL}/api/playlists`)
         .then((res) => res.json())
-        .then((data) => setPlaylists(data))
-        .catch((err) => console.error(err));
+        .then((data) => {
+          console.log("DATA FROM BACKEND:", data);
+          setPlaylists(data);
+        })
+        .catch((err) => console.error("FETCH ERROR:", err));
     }, []);
+
 
     // filter logic
     const renderContent = () => {
